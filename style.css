@@ -110,7 +110,6 @@ html, body {
     height: 150px;
     padding: 1rem;
     border-radius: 10px;
-    border-top: 8px solid #FFD60A;
     cursor: pointer;
     transition: all 0.3s linear;
 }
@@ -195,8 +194,20 @@ html, body {
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
-    padding: 10px;
     margin-top: 20px;
+}
+
+.priorityColor {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.priorityColor.active {
+    border: 5px solid yellowgreen;
 }
 
 .model-btn {
