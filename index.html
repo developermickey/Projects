@@ -27,7 +27,7 @@
 
         </div>
         <div class="btn-group">
-            <button class="add"><i class="ri-add-line"></i> Add Task</button>
+            <button class="add" id="add-btn"><i class="ri-add-line"></i> Add Task</button>
             <button class="delete"><i class="ri-delete-bin-7-line"></i> Delete</button>
         </div>
     </header>
@@ -36,7 +36,7 @@
     <main class="main">
 
         <div class="cards">
-            <div class="card">
+            <!-- <div class="card">
                 <div class="card-top">
                     <span>EXKQWYEUEBGH</span>
                     <i class="ri-lock-fill"></i>
@@ -44,58 +44,15 @@
                 <div class="card-bottom">
                     <h3>Create Landing Page</h3>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-top">
-                    <span>EXKQWYEUEBGH</span>
-                    <i class="ri-lock-fill"></i>
-                </div>
-                <div class="card-bottom">
-                    <h3>Create Landing Page</h3>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-top">
-                    <span>EXKQWYEUEBGH</span>
-                    <i class="ri-lock-fill"></i>
-                </div>
-                <div class="card-bottom">
-                    <h3>Create Landing Page</h3>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-top">
-                    <span>EXKQWYEUEBGH</span>
-                    <i class="ri-lock-fill"></i>
-                </div>
-                <div class="card-bottom">
-                    <h3>Create Landing Page</h3>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-top">
-                    <span>EXKQWYEUEBGH</span>
-                    <i class="ri-lock-fill"></i>
-                </div>
-                <div class="card-bottom">
-                    <h3>Create Landing Page</h3>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-top">
-                    <span>EXKQWYEUEBGH</span>
-                    <i class="ri-lock-fill"></i>
-                </div>
-                <div class="card-bottom">
-                    <h3>Create Landing Page</h3>
-                </div>
-            </div>
+            </div> -->
+           
 
         </div>
 
 
 
         <div class="model">
+            <i class="ri-close-circle-line" id="close-icon"></i>
             <div class="model-top">
                 <h3>Create New Task</h3>
                 <p>Enter your task details</p>
@@ -103,7 +60,7 @@
             <div class="model-center">
                 <form class="form">
                     <div class="myTask">
-                        <input type="text" placeholder="Enter your task" class="inputTask">
+                        <input type="text" placeholder="Enter your task" class="inputTask" id="inputTask">
                     </div>
 
                     <div class="top">
@@ -128,7 +85,7 @@
 
 
 
-
+<script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
     <script src="script.js"></script>
 </body>
 
