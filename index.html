@@ -1,101 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TaskFlow Simple Todo App</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TaskFlow Simple Todo App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
-
 <body>
-    <header class="nabvar">
-        <div class="logo">
-            <img src="./Logo.png" alt="Logo" width="150">
-        </div>
-        <div class="menu">
-            <span>Filter By Priority</span>
-            <div class="color-filters">
-                <div class="color red">
-                    <span>H</span>
-                </div>
-                <div class="color orange"><span>M</span></div>
-                <div class="color blue"><span>L</span></div>
-                <div class="color yellow"><span>C</span></div>
-            </div>
+  <header class="navbar">
+    <div class="logo">
+      <img src="./Logo.png" alt="Logo" width="150" />
+    </div>
+    <div class="menu">
+      <span>Filter By Priority</span>
+      <div class="color-filters">
+        <div class="color red"><span>H</span></div>
+        <div class="color orange"><span>M</span></div>
+        <div class="color blue"><span>L</span></div>
+        <div class="color yellow"><span>C</span></div>
+        <div class="color all"><span>All</span></div> <!-- ✅ ALL TASKS BUTTON -->
+      </div>
+    </div>
+    <div class="btn-group">
+      <button class="add" id="add-btn"><i class="ri-add-line"></i> Add Task</button>
+      <button class="delete"><i class="ri-delete-bin-7-line"></i> Delete</button>
+    </div>
+  </header>
 
-        </div>
-        <div class="btn-group">
-            <button class="add" id="add-btn"><i class="ri-add-line"></i> Add Task</button>
-            <button class="delete"><i class="ri-delete-bin-7-line"></i> Delete</button>
-        </div>
-    </header>
+  <main class="main">
+    <div class="cards"></div>
 
+    <div class="model">
+      <i class="ri-close-circle-line" id="close-icon"></i>
+      <div class="model-top">
+        <h3>Create New Task</h3>
+        <p>Enter your task details</p>
+      </div>
+      <div class="model-center">
+        <form class="form">
+          <div class="myTask">
+            <input type="text" placeholder="Enter your task" id="inputTask" />
+          </div>
+          <div class="top">
+            <div class="red priorityColor active"><span>H</span></div>
+            <div class="orange priorityColor"><span>M</span></div>
+            <div class="blue priorityColor"><span>L</span></div>
+            <div class="yellow priorityColor"><span>C</span></div>
+          </div>
+          <button type="submit" class="model-btn">Create</button>
+        </form>
+      </div>
+    </div>
+  </main>
 
-    <main class="main">
-
-        <div class="cards">
-            <!-- <div class="card">
-                <div class="card-top">
-                    <span>EXKQWYEUEBGH</span>
-                    <i class="ri-lock-fill"></i>
-                </div>
-                <div class="card-bottom">
-                    <h3>Create Landing Page</h3>
-                </div>
-            </div> -->
-           
-
-        </div>
-
-
-
-        <div class="model">
-            <i class="ri-close-circle-line" id="close-icon"></i>
-            <div class="model-top">
-                <h3>Create New Task</h3>
-                <p>Enter your task details</p>
-            </div>
-            <div class="model-center">
-                <form class="form">
-                    <div class="myTask">
-                        <input type="text" placeholder="Enter your task" class="inputTask" id="inputTask">
-                    </div>
-
-                    <div class="top">
-
-                        <div class="red priorityColor active">
-                            <span>H</span>
-                        </div>
-
-                         <div class="orange priorityColor">
-                            <span>M</span>
-                        </div>
-
-                         <div class="blue priorityColor">
-                            <span>L</span>
-                        </div>
-
-                         <div class="yellow priorityColor">
-                            <span>C</span>
-                        </div>
-                       
-                    </div>
-                    <button type="submit" class="model-btn">Create</button>
-                </form>
-            </div>
-
-        </div>
-
-
-    </main>
-
-
-
-
-<script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
-    <script src="script.js"></script>
+ <script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>
